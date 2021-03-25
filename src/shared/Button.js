@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
     color: white;
-    background-color: #8CB2D1;
+    background-color: ${props => props.theme.colors.secondary};
     padding: .25em;
     margin: .25em;
     ${props => {
@@ -14,7 +14,8 @@ const Button = styled.button`
             default:
                 return "font-size: 16px";
         }
-    }}
+    }};
+    border: 1px solid white;
 `;
 
 export default Button;
