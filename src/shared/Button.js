@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
     color: white;
     background-color: ${props => props.theme.colors.secondary};
     padding: .25em;
@@ -22,4 +22,6 @@ const Button = styled.button`
     }
 `;
 
-export default Button;
+export const ButtonRounded = styled(Button)`
+    border-radius: 12px;
+`;

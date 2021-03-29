@@ -1,4 +1,4 @@
-import Button from './shared/Button';
+import {Button, ButtonRounded} from './shared/Button';
 import Title from './shared/Title';
 import Wrapper from './components/Wrapper';
 import Sidebar from './components/Sidebar';
@@ -25,6 +25,7 @@ function App() {
             <Button>No size</Button>
             <Button size="lg">Large</Button>
           </div>
+          <ButtonRounded size="lg">Rounded</ButtonRounded>
         </Container>
       </Wrapper>
     </ThemeProvider>
