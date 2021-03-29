@@ -5,12 +5,18 @@ import Sidebar from './components/Sidebar';
 import Container from './components/Container';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './config/theme';
+import {Home} from '@styled-icons/boxicons-regular/Home';
+import {Pets} from '@styled-icons/material/Pets';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
-        <Sidebar>Sidebar</Sidebar>
+        <Sidebar>
+          <p>Sidebar</p>
+          <Home size="24px" title="Home"/>
+          <Pets size="24px" title="Pets"/>
+        </Sidebar>
         <Container>
           <Title primary>Title with primary color</Title>
           <Title secondary>Title with secondary color</Title>
